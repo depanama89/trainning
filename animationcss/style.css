@@ -1,0 +1,101 @@
+.heart {
+  background-color: pink;
+  position: absolute;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  right: 0;
+  bottom: -450px;
+  left: 0;
+  transform: rotate(-45deg);
+}
+.heart::after {
+  content: "";
+  background-color: pink;
+
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left: 45px;
+}
+.heart::before {
+  background-color: pink;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  top: -45px;
+  left: 0px;
+}
+.cube {
+  background-color: red;
+  margin: auto;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid pink;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.cube::after {
+  background-color: black;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(7, 6, 6);
+  top: 20px;
+  left: 30px;
+}
+.border {
+  background-color: rgb(19, 19, 19);
+  border: 1px solid rgb(8, 7, 7);
+  position: absolute;
+  top: 11px;
+  width: 39px;
+  height: 1px;
+  transform: rotate(-146deg);
+  left: -3px;
+}
+.border_1 {
+  background-color: pink;
+  border: 1px solid pink;
+  position: absolute;
+  top: 9px;
+  /* right: 200px; */
+  width: 36px;
+  height: 1px;
+  transform: rotate(-147deg);
+  left: 97px;
+  bottom: 102px;
+}
+.border_2 {
+  background-color: pink;
+  border: 1px solid pink;
+  position: absolute;
+  top: 109px;
+  /* right: 200px; */
+  width: 34px;
+  height: 1px;
+  transform: rotate(-146deg);
+  left: -3px;
+  /* bottom: 102px; */
+}
+.border_3 {
+  background-color: pink;
+  border: 1px solid pink;
+  position: absolute;
+  top: 109px;
+  /* right: 200px; */
+  width: 34px;
+  height: 1px;
+  transform: rotate(-146deg);
+  left: 97px;
+  /* bottom: 102px; */
+}
