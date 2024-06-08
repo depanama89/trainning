@@ -75,24 +75,41 @@ body {
   }
 }
 /* cube bezier */
-.container {
+/* .container {
   display: flex;
   gap: 20px;
   width: 100%;
   height: auto;
-  justify-content: center;
-}
+
+} */
 .bulll {
-  /* position: fixed; */
+  position: fixed;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  animation-name: bulle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 #bull_1 {
   background-color: red;
   border: 1px solid red;
+
+  animation-timing-function: cubic-bezier(0, 0, 0.98, 4);
+  left: 23%;
 }
 #bull_2 {
   background-color: green;
   border: 1px solid green;
+  left: 50%;
+
+  animation-timing-function: ease-out;
+}
+@keyframes bulle {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 249px;
+  }
 }
